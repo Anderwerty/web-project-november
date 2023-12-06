@@ -1,4 +1,4 @@
-package ua.kazaks.example.controller.dispatcher;
+package ua.kozaks.example.controller.dispatcher;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

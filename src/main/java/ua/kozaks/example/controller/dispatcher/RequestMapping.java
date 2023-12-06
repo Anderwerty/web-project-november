@@ -1,4 +1,4 @@
-package ua.kazaks.example.controller.dispatcher;
+package ua.kozaks.example.controller.dispatcher;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 public @interface RequestMapping {
     String url();
 
-    MethodType method();
+    MethodType method() default MethodType.GET;
 }

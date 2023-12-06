@@ -1,4 +1,4 @@
-package ua.kazaks.example.filter;
+package ua.kozaks.example.filter;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;

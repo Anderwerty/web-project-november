@@ -1,4 +1,4 @@
-package ua.kazaks.example.entity;
+package ua.kozaks.example.entity;
 
 import java.util.Objects;
 

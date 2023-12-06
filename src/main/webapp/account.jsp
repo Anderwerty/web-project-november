@@ -26,6 +26,21 @@
     </tr>
   </c:forEach>
 </table>
+      <form action = "login" method = "GET">
+         First Name: <input type = "text" name = "first_name">
+         <br />
+         Last Name: <input type = "text" name = "last_name" />
+         <input type = "submit" value = "Submit"/>
+      </form>
+      <br/>
+      <br/>
+      <br/>
 
+      <form action = "login2" method = "POST">
+         First Name: <input type = "text" name = "first_name">
+         <br />
+         Last Name: <input type = "text" name = "last_name" />
+         <input type = "submit" value = "Submit"/>
+      </form>
 </body>
 </html>

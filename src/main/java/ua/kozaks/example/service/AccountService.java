@@ -1,7 +1,7 @@
-package ua.kazaks.example.service;
+package ua.kozaks.example.service;
 
-import ua.kazaks.example.entity.Account;
-import ua.kazaks.example.repository.AccountRepository;
+import ua.kozaks.example.entity.Account;
+import ua.kozaks.example.repository.AccountRepository;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package ua.kazaks.example.controller.real;
+package ua.kozaks.example.controller.real;
 
-import ua.kazaks.example.controller.dispatcher.MethodType;
-import ua.kazaks.example.controller.dispatcher.RequestMapping;
-import ua.kazaks.example.service.AccountService;
+import ua.kozaks.example.controller.dispatcher.MethodType;
+import ua.kozaks.example.controller.dispatcher.RequestMapping;
+import ua.kozaks.example.service.AccountService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +21,9 @@ public class AccountController {
     @RequestMapping(url = "/accounts", method = MethodType.GET)
     public void showAllAccount(HttpServletRequest request, HttpServletResponse response) {
         request.setAttribute("accounts", accountService.findAll());
+
+        System.out.println("first: " +request.getParameter("first"));
+        System.out.println("second: " +request.getParameter("second"));
         try {
             request.getRequestDispatcher("/account.jsp").forward(request, response);
         } catch (ServletException e) {

@@ -1,6 +1,6 @@
-package ua.kazaks.example.repository;
+package ua.kozaks.example.repository;
 
-import ua.kazaks.example.entity.Account;
+import ua.kozaks.example.entity.Account;
 
 import java.util.List;
 import java.util.Optional;

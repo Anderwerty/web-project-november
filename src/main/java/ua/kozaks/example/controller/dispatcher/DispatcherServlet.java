@@ -1,4 +1,6 @@
-package ua.kazaks.example.controller.dispatcher;
+package ua.kozaks.example.controller.dispatcher;
+
+import ua.kozaks.example.injector.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +12,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 //Front Controller
-import static ua.kazaks.example.injector.ApplicationContext.URL_TO_METHODMAP;
 
 
 @WebServlet("/dispatcher/*")
@@ -30,11 +31,13 @@ public class DispatcherServlet extends HttpServlet {
 //        System.out.println("auth type: " + req.getAuthType());
 //        System.out.println("servlet path: " + req.getServletPath());
 
+        System.out.println("request processing");
+        System.out.println("=====================================================");
         String url = uri.replace(req.getContextPath(), "").replace(req.getServletPath(), "");
         System.out.println("url: " + url);
 
 
-        MethodMap methodMap = URL_TO_METHODMAP.get(url);
+        MethodMap methodMap = ApplicationContext.URL_TO_METHODMAP.get(url);
 //        System.out.println("size: " + URL_TO_METHODMAP.size());
 //        URL_TO_METHODMAP.forEach((k, v) -> System.out.println(k + ":" + v));
 

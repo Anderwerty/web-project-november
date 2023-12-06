@@ -1,4 +1,4 @@
-package ua.kazaks.example.controller;
+package ua.kozaks.example.controller;
 
 import javax.servlet.http.HttpServlet;
 
